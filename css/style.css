@@ -383,7 +383,11 @@ width: 850px;margin: 0 auto;}
 .fs-a--7 .item--01 .img-layer .line-02 { width: 0px; height: 100%;}
 .fs-a--7 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all; background-color: rgb(255 255 255);    box-shadow: 0px 0px 8px 8px rgb(255 255 255); color: #111;font-weight: bold;}
 
-
+.graphic-title-thumbs { text-align: center;  position: absolute;
+width: 350px; top: 50px; left: 50%; margin-left: -175px;}
+.graphic-title-thumbs p { font-size: 13px; font-family: 'Noto Sans KR';  font-weight:bold;  float: left; line-height: 38px; }
+.graphic-title-thumbs .thumbs { width: 40px; height: 40px; border-radius: 3px; overflow:hidden;  margin-right: 12px; float: left; }  
+.graphic-title-thumbs .thumbs img { width:100%; } 
 
 .graph-holder { width:100%; margin: 60px auto; }
 .graph-holder h2.graph-title { text-align: center; font-size: 18px; font-weight:bold; }
@@ -410,6 +414,11 @@ box-sizing:border-box; padding: 0px 20px; padding-top: 120px; }
 .st-bg--03 { background: url("../img/sec_03_title_bg_2.jpg") no-repeat center; background-size: cover; opacity: 0.9;}
 .st-bg--04 { background: url("../img/numbering.gif") no-repeat center; background-size: cover; opacity: 0.7;}
 .st-bg--05 { background: url("../img/anxious.gif") no-repeat center right; background-size: cover; opacity: 0.8;}
+.st-bg--06 { background: url("../img/sec_06_title_bg.jpg") no-repeat center right; background-size: cover;}
+.st-bg--07 { background: url("../img/sec_07_title_bg.jpg") no-repeat center right; background-size: cover; opacity: 0.8;}
+.st-bg--08 { background: url("../img/sec_08_title_bg.jpg") no-repeat center right; background-size: cover;}
+
+
 
 
 .sec-black { background:#2a292b; background:#262b35; }
