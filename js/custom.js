@@ -297,21 +297,17 @@ $(function(){
 				$fs.eq(ts[0]-1).find(".slider-item:not(:eq("+fi_el_index+"))").stop().animate({"opacity":"0"}, 1000);
 				$fi_els.eq(fi_el_index).stop().animate({"opacity":"1"}, 500);
 				
-				//양혜원 그래프 애니메이션
+				//천지영 그래프 애니메이션
 				if(line01AniDone==false&&ts[0]==1&&ts[2]==1){
 					$(".fs-a--2 .item--01 .img-layer .line-01").animate({"width":"100%"}, 2000, "easeOutSine");
-					line01AniDone==true;
+					
 				}
-				if(line01AniDone==false&&ts[0]==1&&ts[2]==3){
-					$(".fs-a--2 .item--03 .img-layer .line-02").animate({"width":"100%"}, 2000, "easeOutSine");
-					line01AniDone==true;
-				}
-				//양혜원 그래프 애니메이션
+				//천지영 그래프 애니메이션
 
 				//이석준 그래프 애니메이션
 				if(line01AniDone==false&&ts[0]==2&&ts[2]==1){
 					$(".fs-a--3 .item--01 .img-layer .line-01").animate({"width":"100%"}, 2000, "easeOutSine");
-					line01AniDone==true;
+					
 				}
 				if(line01AniDone==false&&ts[0]==2&&ts[2]==2){
 					$(".fs-a--3 .item--02 .img-layer .line-02").animate({"width":"100%"}, 2000, "easeOutSine");
@@ -319,6 +315,30 @@ $(function(){
 				}
 				//이석준 그래프 애니메이션
 
+				//양혜원 그래프 애니메이션
+				if(line01AniDone==false&&ts[0]==3&&ts[2]==1){
+					$(".fs-a--4 .item--01 .img-layer .line-01").animate({"width":"100%"}, 2000, "easeOutSine");
+					
+				}
+				if(line01AniDone==false&&ts[0]==3&&ts[2]==3){
+					$(".fs-a--4 .item--03 .img-layer .line-02").animate({"width":"100%"}, 2000, "easeOutSine");
+					
+				}
+				//양혜원 그래프 애니메이션
+
+				//김영빈 그래프 애니메이션
+				if(line01AniDone==false&&ts[0]==4&&ts[2]==1){
+					$(".fs-a--5 .item--01 .img-layer .line-01").animate({"width":"100%"}, 2000, "easeOutSine");
+					
+				}
+				//김영빈 그래프 애니메이션
+
+				//이충훈 그래프 애니메이션
+				if(line01AniDone==false&&ts[0]==5&&ts[2]==1){
+					$(".fs-a--6 .item--01 .img-layer .line-01").delay(1000).animate({"width":"100%"}, 2000, "easeOutSine");
+					$(".fs-a--6 .item--01 .img-layer .line-02").animate({"width":"100%"}, 2900, "easeOutSine");
+				}
+				//이충훈 그래프 애니메이션
 			}
 		}
 	};	
