@@ -315,19 +315,21 @@ $(function(){
 				}
 				//이석준 그래프 애니메이션
 
+
+				// 양혜원과 김영빈 순서 교체 
 				//양혜원 그래프 애니메이션
-				if(line01AniDone==false&&ts[0]==3&&ts[2]==1){
+				if(line01AniDone==false&&ts[0]==4&&ts[2]==1){
 					$(".fs-a--4 .item--01 .img-layer .line-01").animate({"width":"100%"}, 2000, "easeOutSine");
 					
 				}
-				if(line01AniDone==false&&ts[0]==3&&ts[2]==3){
+				if(line01AniDone==false&&ts[0]==4&&ts[2]==3){
 					$(".fs-a--4 .item--03 .img-layer .line-02").animate({"width":"100%"}, 2000, "easeOutSine");
 					
 				}
 				//양혜원 그래프 애니메이션
 
 				//김영빈 그래프 애니메이션
-				if(line01AniDone==false&&ts[0]==4&&ts[2]==1){
+				if(line01AniDone==false&&ts[0]==3&&ts[2]==1){
 					$(".fs-a--5 .item--01 .img-layer .line-01").animate({"width":"100%"}, 2000, "easeOutSine");
 					
 				}
@@ -468,8 +470,8 @@ $(function(){
 
 	/******** 모바일 전용 조정 ********/	
 	if(isMobile==true){
-		$("#S02_01").find("img").attr("src","img/math-curri-table-m.jpg");
-		$("#G_01 .graph-body").find("img").attr("src","img/graph-01-m-notitle.png");
+		$("#S02_01").find("img").attr("src","https://img.khan.co.kr/spko/storytelling/2021/edu31/math-curri-table-m.jpg");
+		$("#G_01 .graph-body").find("img").attr("src","https://img.khan.co.kr/spko/storytelling/2021/edu31/graph-01-m-notitle.png");
 		$(".slider-item .img-layer .base").each(function(){
 			$(this).attr("src",lineSrcChange($(this).attr("src")));
 		});
@@ -599,12 +601,6 @@ $(function(){
 			checkNowStage(nowScroll);
 		}
 
-		/* gnb
-		if( nowScroll > $(".sec--01").offset().top ){
-			$(".gnb-right").addClass("navi-show");
-		}else{
-			$(".gnb-right").removeClass("navi-show");
-		}*/
 		if(nowScroll > screenHeight*0.5){
 			$(".going-down").fadeOut(300);
 			if(introAnimationDone==false){
@@ -625,7 +621,6 @@ $(function(){
                 }
             });
         }
-		
 		
 		
 		$(".story-header-video").each(function(i){
