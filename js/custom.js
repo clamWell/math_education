@@ -339,6 +339,23 @@ $(function(){
 					$(".fs-a--6 .item--01 .img-layer .line-02").animate({"width":"100%"}, 2900, "easeOutSine");
 				}
 				//이충훈 그래프 애니메이션
+
+
+				//김민준 그래프 애니메이션
+				if(line01AniDone==false&&ts[0]==6&&ts[2]==1){
+					$(".fs-a--7 .item--01 .img-layer .line-01").delay(1000).animate({"width":"100%"}, 2000, "easeOutSine");
+					$(".fs-a--7 .item--01 .img-layer .line-02").animate({"width":"100%"}, 2900, "easeOutSine");
+				}
+				//김민준  그래프 애니메이션
+
+				//위서현 그래프 애니메이션
+				if(line01AniDone==false&&ts[0]==7&&ts[2]==1){
+					$(".fs-a--8 .item--01 .img-layer .line-01").delay(1000).animate({"width":"100%"}, 2000, "easeOutSine");
+					$(".fs-a--8 .item--01 .img-layer .line-02").animate({"width":"100%"}, 2900, "easeOutSine");
+				}
+				//위서현 그래프 애니메이션
+
+
 			}
 		}
 	};	
@@ -360,10 +377,10 @@ $(function(){
 
 	function setAniLineWidthInMobile(){
 		$(".img-layer .line-01").find("img").each(function(i){
-			$(this).css({"width": (screenWidth*0.95)+"px"});
+			$(this).css({"width": (screenWidth*1)+"px"});
 		});
 		$(".img-layer .line-02").find("img").each(function(i){
-			$(this).css({"width": (screenWidth*0.95)+"px"});
+			$(this).css({"width": (screenWidth*1)+"px"});
 		});
 	}
 	/*********Fised Slider col 2 **********/
@@ -398,12 +415,12 @@ $(function(){
 	}
 
 
+	var introAnimationDone = false; 
 	function animateIntroEl(){
 		$(".story-header-text .title-holder .title-deco-line").animate({"width": ((isMobile==true)? "80%":"500px")}, 800, "swing", function(){
 			$(".project-sub-title").animate({"opacity":"1", "top":"0px"}, 1000, "swing",function(){
-				$(".story-header-text .title-holder .project-member").animate({"opacity":"1", "top":"0px"}, 1000, "swing", function(){
+				$(".story-header-text .title-holder .project-member").animate({"opacity":"0.5", "top":"0px"}, 1000, "swing", function(){
 					$(".top-byline").animate({"opacity":"0.5"}, 1000, "swing");
-					$(".going-down").fadeIn();
 					$("body").removeClass("fixed");
 						
 				});
@@ -423,24 +440,65 @@ $(function(){
 	/***개발용 init ***/
 
 	function init(){
-		animateIntroBg();
+		//animateIntroBg();
 		if(isMobile==false&&ieTest==false){
 			setMouseMoveEventsAfterLoad();
         }else if(isMobile==true){
 			setAniLineWidthInMobile();
+			avoid100vh();
 		}
 		settingFixedElOpacity();
 		settingFixedElPos();
 		AOS.init();
+		setIntroVideo();
 
 
 	};
+
+	String.prototype.insert_at=function(index, string){
+	  return this.substr(0, index) + string + this.substr(index);
+	}
+
+	var lineSrcChange = function(src){
+		var src = src;
+		var srcSplit = src.split(".png")
+		var newSrc = srcSplit[0]+"-m.png";
+		return newSrc;
+	};
+
+	/******** 모바일 전용 조정 ********/	
+	if(isMobile==true){
+		$("#S02_01").find("img").attr("src","img/math-curri-table-m.jpg");
+		$("#G_01 .graph-body").find("img").attr("src","img/graph-01-m-notitle.png");
+		$(".slider-item .img-layer .base").each(function(){
+			$(this).attr("src",lineSrcChange($(this).attr("src")));
+		});
+		$(".slider-item .img-layer .line-01").each(function(){
+			$(this).find("img").attr("src",lineSrcChange($(this).find("img").attr("src")));
+		});
+		$(".slider-item .img-layer .line-02").each(function(){
+			$(this).find("img").attr("src",lineSrcChange($(this).find("img").attr("src")));
+		});
+		$(".graph-full-src-change").each(function(){
+			$(this).attr("src",lineSrcChange($(this).attr("src")));
+		});
+		
+			
+	}else{
+       
+	}
+	/******** 모바일 전용 조정 ********/
+	function avoid100vh(){
+		$(".spacer").height(screenHeight);
+		$(".page-title").html("중학생, 수학을 말하다");
+	}
 
 
 	var isNowIntro;
 	$(".loading-page").fadeOut(1000, function(){
 		isNowIntro = true;
 		init();
+		//initDev();
 	});
 
 	/******** fragments mouse move animate ********/	
@@ -499,6 +557,25 @@ $(function(){
 		my = 0;
 	}*/
 
+	/*** 인트로 비디오 관련 ***/ 
+	var isIntroVdieoMuted = true; 
+	$(".sound-icon").on("click",function(){
+		$(this).toggleClass("sound-icon-mute");
+		isIntroVdieoMuted = !isIntroVdieoMuted;			
+		$("#V_INTRO_PC").prop("muted", isIntroVdieoMuted);			
+	});
+
+	var introVideoPlay;
+	var introVideo = document.getElementById("V_INTRO_PC");
+	if(introVideo.readyState === 4){
+		setIntroVideo();
+	}
+
+	function setIntroVideo(){
+		introVideoPlay = true; 
+	}
+	/*** 인트로 비디오 관련 ***/ 
+
 
 	$(window).scroll(function(){
 		var nowScroll = $(window).scrollTop();
@@ -509,15 +586,6 @@ $(function(){
 			}
 		});
 
-		if(ieTest==false){
-            $(".video-tag").each(function(i){
-                if( nowScroll + screenHeight*0.5 > $(this).offset().top){
-                    $(this).find("video").get(0).play();
-                }else{
-                    $(this).find("video").get(0).pause();
-                }
-            });
-        }
 
 		/*
 		if(nowScroll > 1500){
@@ -537,6 +605,44 @@ $(function(){
 		}else{
 			$(".gnb-right").removeClass("navi-show");
 		}*/
+		if(nowScroll > screenHeight*0.5){
+			$(".going-down").fadeOut(300);
+			if(introAnimationDone==false){
+				introAnimationDone = true;
+				animateIntroBg();
+			}
+		}else{
+			$(".going-down").show();
+		}	
+
+		
+		if(ieTest==false){
+            $(".interviewee-holder .video-tag").each(function(i){
+                if( nowScroll + screenHeight*0.5 > $(this).offset().top){
+                    $(this).find("video").get(0).play();
+                }else{
+                    $(this).find("video").get(0).pause();
+                }
+            });
+        }
+		
+		
+		
+		$(".story-header-video").each(function(i){
+			if( nowScroll > screenHeight*1){
+				if(introVideoPlay == true){
+					introVideoPlay = false; 
+					$(this).find("video").get(0).pause();
+					console.log("pause");
+				}
+			}else{
+				if(introVideoPlay == false){
+					introVideoPlay = true;
+					$(this).find("video").get(0).play();
+					console.log("play");
+				}
+			}
+		});
 
 	});
 
