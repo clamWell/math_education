@@ -10,37 +10,34 @@ img { border:0; vertical-align:bottom; }
   font-family: 'Noto Serif KR';
   font-style: normal;
   font-weight: 400;
-  src: url('noto-serif-kr-v6-korean-regular.eot'); /* IE9 Compat Modes */
-  src: local('Noto Serif KR'), local('NotoSerifKR-Regular'),
-       url('noto-serif-kr-v6-korean-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('noto-serif-kr-v6-korean-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('noto-serif-kr-v6-korean-regular.woff') format('woff'), /* Modern Browsers */
-       url('noto-serif-kr-v6-korean-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('noto-serif-kr-v6-korean-regular.svg#NotoSerifKR') format('svg'); /* Legacy iOS */
+  src: url('https://img.khan.co.kr/spko/fonts/noto-serif-kr-v6-korean-regular.eot'),
+       url('https://img.khan.co.kr/spko/fonts/noto-serif-kr-v6-korean-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	   url('https://img.khan.co.kr/spko/fonts/noto-serif-kr-v6-korean-regular.woff2') format('woff2'),  /* Super Modern Browsers */
+       url('https://img.khan.co.kr/spko/fonts/noto-serif-kr-v6-korean-regular.woff') format('woff'), /* Modern Browsers */
+       url('https://img.khan.co.kr/spko/fonts/noto-serif-kr-v6-korean-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://img.khan.co.kr/spko/fonts/noto-serif-kr-v6-korean-regular.svg#NotoSerifKR') format('svg'); /* Legacy iOS */
 }
 /* noto-serif-kr-700 - korean */
 @font-face {
   font-family: 'Noto Serif KR';
   font-style: bold;
   font-weight: 700;
-  src: url('noto-serif-kr-v6-korean-700.eot'); /* IE9 Compat Modes */
-  src: local('Noto Serif KR Bold'), local('NotoSerifKR-Bold'),
-       url('noto-serif-kr-v6-korean-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('noto-serif-kr-v6-korean-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('noto-serif-kr-v6-korean-700.woff') format('woff'), /* Modern Browsers */
-       url('noto-serif-kr-v6-korean-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('noto-serif-kr-v6-korean-700.svg#NotoSerifKR') format('svg'); /* Legacy iOS */
+  src: url('https://img.khan.co.kr/spko/fonts/noto-serif-kr-v6-korean-700.eot'), /* IE9 Compat Modes */
+       url('https://img.khan.co.kr/spko/fonts/noto-serif-kr-v6-korean-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://img.khan.co.kr/spko/fonts/noto-serif-kr-v6-korean-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://img.khan.co.kr/spko/fonts/noto-serif-kr-v6-korean-700.woff') format('woff'), /* Modern Browsers */
+       url('https://img.khan.co.kr/spko/fonts/noto-serif-kr-v6-korean-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://img.khan.co.kr/spko/fonts/noto-serif-kr-v6-korean-700.svg#NotoSerifKR') format('svg'); /* Legacy iOS */
 }
-
 
 
 @font-face {
     font-family: 'notokr-regular';
-    src: url('notokr-regular.eot');
-    src: url('notokr-regular.eot?#iefix') format('embedded-opentype'),
-         url('notokr-regular.woff') format('woff'),
-         url('notokr-regular.ttf') format('truetype'),
-         url('notokr-regular.svg#notokr-regular') format('svg');
+    src: url('https://img.khan.co.kr/spko/fonts/notokr-regular.eot'),
+		 url('https://img.khan.co.kr/spko/fonts/notokr-regular.eot?#iefix') format('embedded-opentype'),
+         url('https://img.khan.co.kr/spko/fonts/notokr-regular.woff') format('woff'),
+         url('https://img.khan.co.kr/spko/fonts/notokr-regular.ttf') format('truetype'),
+         url('https://img.khan.co.kr/spko/fonts/notokr-regular.svg#notokr-regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -382,41 +379,41 @@ margin: 0 auto; letter-spacing: -0.02em; font-size: 17.5px; line-height: 1.6; /*
 .fs-a--2 { margin-top:200px; }
 .fs-a--2 .item--01 .img-layer .line-01 { width: 0px; height: 100%; }
 .fs-a--2 .item--03 .img-layer .line-02 { width: 0px; height: 100%;}
-.fs-a--2 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all; background-color: rgb(255 255 255);    box-shadow: 0px 0px 8px 8px rgb(255 255 255); color: #111;font-weight: bold;}
+.fs-a--2 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all;background:#fff;  box-shadow: 0px 0px 8px 8px #fff; color: #111;font-weight: bold;}
 
 .fs-a--3 { margin-top:200px; }
 .fs-a--3 .item--01 .img-layer .line-01 { width: 0px; height: 100%; }
 .fs-a--3 .item--02 .img-layer .line-02 { width: 0px; height: 100%;}
-.fs-a--3 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all; background-color: rgb(255 255 255);    box-shadow: 0px 0px 8px 8px rgb(255 255 255); color: #111;font-weight: bold;}
+.fs-a--3 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all;background:#fff;box-shadow: 0px 0px 8px 8px #fff; color: #111;font-weight: bold;}
 
 .fs-a--4 { margin-top:200px; }
 .fs-a--4 .item--01 .img-layer .line-01 { width: 0px; height: 100%; }
 .fs-a--4 .item--03 .img-layer .line-02 { width: 0px; height: 100%;}
-.fs-a--4 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all; background-color: rgb(255 255 255);    box-shadow: 0px 0px 8px 8px rgb(255 255 255); color: #111;font-weight: bold;}
+.fs-a--4 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all;background:#fff;    box-shadow: 0px 0px 8px 8px #fff; color: #111;font-weight: bold;}
 
 .fs-a--5 { margin-top:200px; }
 .fs-a--5 .item--01 .img-layer .line-01 { width: 0px; height: 100%; }
-.fs-a--5 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all; background-color: rgb(255 255 255);    box-shadow: 0px 0px 8px 8px rgb(255 255 255); color: #111;font-weight: bold;}
+.fs-a--5 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all;background:#fff;    box-shadow: 0px 0px 8px 8px #fff; color: #111;font-weight: bold;}
 
 .fs-a--6 { margin-top:200px; }
 .fs-a--6 .item--01 .img-layer .line-01 { width: 0px; height: 100%; }
 .fs-a--6 .item--01 .img-layer .line-02 { width: 0px; height: 100%;}
-.fs-a--6 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all; background-color: rgb(255 255 255);    box-shadow: 0px 0px 8px 8px rgb(255 255 255); color: #111;font-weight: bold;}
+.fs-a--6 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all;background:#fff;    box-shadow: 0px 0px 8px 8px #fff; color: #111;font-weight: bold;}
 
 .fs-a--7 { margin-top:200px; }
 .fs-a--7 .item--01 .img-layer .line-01 { width: 0px; height: 100%; }
 .fs-a--7 .item--01 .img-layer .line-02 { width: 0px; height: 100%;}
-.fs-a--7 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all; background-color: rgb(255 255 255);    box-shadow: 0px 0px 8px 8px rgb(255 255 255); color: #111;font-weight: bold;}
+.fs-a--7 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all;background:#fff;    box-shadow: 0px 0px 8px 8px #fff; color: #111;font-weight: bold;}
 
 .fs-a--8 { margin-top:200px; }
 .fs-a--8 .item--01 .img-layer .line-01 { width: 0px; height: 100%; }
 .fs-a--8 .item--01 .img-layer .line-02 { width: 0px; height: 100%;}
-.fs-a--8 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all; background-color: rgb(255 255 255);    box-shadow: 0px 0px 8px 8px rgb(255 255 255); color: #111;font-weight: bold;}
+.fs-a--8 .text-nobox .half {  box-sizing: border-box;padding: 0px 20px; word-break: keep-all;background:#fff;    box-shadow: 0px 0px 8px 8px #fff; color: #111;font-weight: bold;}
 
 
 .graphic-title-thumbs { text-align: center;  position: absolute;
 width: 350px; top: 50px; left: 50%; margin-left: -175px;}
-.graphic-title-thumbs p { font-size: 13px; font-family: 'Noto Sans KR';  font-weight:bold;  float: left; line-height: 38px; }
+.graphic-title-thumbs p { font-size: 13px; 'Noto Sans KR', 'notokr-regular', 'Apple SD Gothic Neo','맑은 고딕'; font-weight:bold;  float: left; line-height: 38px; }
 .graphic-title-thumbs .thumbs { width: 40px; height: 40px; border-radius: 3px; overflow:hidden;  margin-right: 12px; float: left; }  
 .graphic-title-thumbs .thumbs img { width:100%; } 
 
@@ -456,9 +453,13 @@ width: 350px; top: 50px; left: 50%; margin-left: -175px;}
 
 #S04_02 { display:none; }
 #S02_10 { display:none; }
+#S02_11 img { max-width: 650px; width:100%; border: 1px solid #ddd;}
+
 
 #G_03 { background:#131313; }
 
+#S07_01 img { width:1200px; }
+#S08_01 img { width:1200px; }
 
 
 .interviewee-holder .thumb .itv-video { width:100%; }
@@ -603,11 +604,23 @@ background-size: 15px 15px; padding-right: 20px;background-position: right;  cur
 .digital-list-wrap { border-top: 1px solid #dbdbdb; }
 .digital-list { position: relative; z-index:2;}
 
-.credit-box {  max-width: 800px; margin: 50px auto;  box-sizing: border-box; padding: 30px;
-border-top: 1px solid #ddd; margin-top: 150px;line-height: 1.6; color: #56616b; font-size: 13.5px;}
+.collabo-desc-area {max-width: 700px; margin: 50px auto; box-sizing: border-box; padding: 40px; background: #f0f2f5;
+background: #e8e9ef;border-radius: 0px 20px 0px 20px;box-shadow: 10px 10px 0px #162c4e;}
+.collabo-desc-area .thumb { width:100%;    margin-bottom: 30px;}
+.collabo-desc-area .thumb img { width:100%;}
+.collabo-desc-area p { font-size: 18px;  line-height: 1.65; margin: 15px auto;}
+
+
+.footer-video { position: relative; width:100%;}
+.footer-video .video-tag  { width:100%; position: relative;}
+.footer-video .video-tag video { width:100%; vertical-align: top; border-radius: 20px; z-index: 1; }
+.footer-video .sound-des { position: relative; color:#111; }
+
+.credit-box {  max-width: 800px; margin: 50px auto;  box-sizing: border-box; padding: 30px;border-top: 1px solid #ddd; line-height: 1.6; color: #56616b; font-size: 13.5px;}
 .credit-box .des { margin-bottom: 20px;}
 .credit-box ul {}
 .credit-box ul li { margin: 1px 0; width: 50%;display: inline-block;float: left;} 
+.credit-box ul li.full {  width:100%;}
 .credit-box ul li span.head {font-weight: bold; margin-right: 20px;min-width: 70px; display: inline-block;}
 .credit-box ul::after { clear:both; content:""; display:block; }
 .credit-box .title { margin-bottom: 20px; font-weight: bold; font-size: 15px; border-left: 3px solid #ff3434; padding-left: 20px;  line-height: 1;}
@@ -686,7 +699,7 @@ border-top: 1px solid #ddd; margin-top: 150px;line-height: 1.6; color: #56616b; 
 .digital-list-dark .digital-list-wrap  {  border-top: 1px solid #545454;}
 
 
-.footer-area {  background: linear-gradient(-25deg, rgb(0 0 0), rgb(70 70 78));
+.footer-area { background: #222; background: linear-gradient(-25deg, rgb(0 0 0), rgb(70 70 78));
 -webkit-background: linear-gradient(-25deg, rgb(0 0 0), rgb(70 70 78));}
 .footer-area .digital-list-dark, .footer-area .common-byline-b{ background:none; }
 .footer-area .common-byline-b .c-byline-border {background: rgba(255,255,255,0.08); border-radius: 5px; box-shadow: 3px 3px 8px rgb(0 0 0 / 10%);}
@@ -703,6 +716,7 @@ border-top: 1px solid #ddd; margin-top: 150px;line-height: 1.6; color: #56616b; 
 .title-as-svg { width: 500px; }
 .top-byline {    margin-top: 50px; }
 
+.interviewee-holder .thumb { width: 55%; }
 
 }
 
@@ -897,7 +911,7 @@ text-align: left; word-break: keep-all; margin-bottom: 20px; text-align: center;
 
 .col-float-wrap .img-col { border-radius: 0; }
 
-.interviewee-holder .thumb .itv-video {box-sizing: border-box;padding: 0px 14px;}
+.interviewee-holder .thumb .itv-video {box-sizing: border-box;padding: 0px 14px; border-radius: 20px; overflow: hidden;}
 #S02_05 .interview-text-img img { width: 300px; }
 #S05_02 .interview-text-img img { width: 300px; }
 #S05_04 .interview-text-img img { width: 300px; }
@@ -920,6 +934,12 @@ text-align: left; word-break: keep-all; margin-bottom: 20px; text-align: center;
 .stu-bal { margin-top: 60px; margin-bottom: 20px;}
 .stu-bal img { width: 90%; }
 .para-as-balloon p.serif {font-size: 15.5px;color: #606065; font-family: 'Noto Sans KR';font-weight: normal; line-height: 1.6;}
+
+.collabo-desc-area { width: 90%; padding: 20px; box-shadow: 5px 5px 0px #162c4e;}
+.collabo-desc-area .thumb { margin-bottom: 20px; }
+.collabo-desc-area p { margin: 10px auto;font-size: 16px;line-height: 1.55;}
+
+
 
 .credit-box {padding: 20px;margin: 30px auto;}
 .credit-box ul li { width:100%; float:none;}
